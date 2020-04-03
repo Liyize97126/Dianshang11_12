@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    android:background="#D5FFA8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="#C9D0FF"
+        android:layout_marginBottom="3dp">
+
+        <ImageView
+            android:id="@+id/dong_animation"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/apple"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Animation"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="#C9D0FF"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp">
+
+        <ImageView
+            android:id="@+id/dong_animator"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/apple"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Animator"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/hs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#C9D0FF"
+        android:layout_marginTop="3dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Animation\n平移动画"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:onClick="event01"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Animator\n平移动画"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:onClick="event02"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Animator\n旋转动画"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:onClick="event03"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Animator\n滚动的苹果"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:onClick="event04"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Animator\n动画集合"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:onClick="event05"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Animator\n动画差值器"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:onClick="event06"/>
+
+            <Button
+                android:id="@+id/daojishi"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="开始倒计时"
+                android:textAllCaps="false"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#C9D0FF">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="11课-绘制坐标图"
+            android:textSize="24sp"
+            android:onClick="goToZBT"/>
+
+    </LinearLayout>
+
+</LinearLayout>
